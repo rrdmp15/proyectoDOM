@@ -2,31 +2,35 @@ export default {
     title:"Mother Mother",
     albums: [
         {
-            name: "Touch Up",
+            name: "History",
             href: "#",
         },
         {
-            name: "O my Heart",
+            name: "Origin",
             href: "#",
         },
         {
-            name: "Eureka",
+            name: "Genders",
             href: "#",
         },
         {
-            name: "Very Good Bad Thing",
+            name: "Record Labels",
             href: "#",
         },
         {
-            name: "No Culture",
+            name: "Period of Activity",
             href: "#",
         },
         {
-            name: "Dance and Cry",
+            name: "Former Members",
             href: "#",
         },
         {
-            name: "Inside",
+            name: "Time Line",
+            href: "#",
+        },
+        {
+            name: "Members",
             href: "#",
         }
     ],
