@@ -14,7 +14,7 @@
 }
 .blog-header {
   line-height: 1;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #5A3D5C;
 }
 
 .blog-header-logo {
@@ -114,6 +114,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 /****************My css*********************/
+@font-face {
+  font-family:'Octin Spraypaint';
+  src: url(../fonts/octin\ spraypaint\ a\ rg.otf);
+}
+body{
+  background: #200F21;
+  color: #E5B8F4;
+}
 
 .imgStyle{
   background-repeat: no-repeat;
@@ -125,4 +133,78 @@ h1, h2, h3, h4, h5, h6 {
   width:250px;
   height: 250px;
   object-fit: fill;
+}
+a{
+  text-decoration: none;
+  color: #E5B8F4;
+}
+a:hover{
+  color: #987ba2;
+}
+a h1{
+  color: #F638DC;
+  font-size: 3rem;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Octin Spraypaint';
+  font-size: 2rem;
+  color: #F638DC;
+}
+
+#banner h1{
+  color: #fff;
+}
+.navA{
+  color: #5A3D5C;
+}
+
+th, td{
+  color: #E5B8F4;
+}
+#cards{
+  background: #382039;
+  border: 1px solid #382039;
+}
+
+strong{
+  color: #200F21;
+}
+
+.dark-text{
+  color: #5A3D5C;
+}
+
+#cards a{
+  color: #200F21;
+}
+
+#cards a:hover{
+  color: #413c41;
+}
+
+.bg-about{
+  background: #382039;
+  border: 1px solid #382039;
+}
+
+.btn-outline-purple{
+  border-color: #F638DC;
+  color: #F638DC;
+}
+
+.btn-outline-purple:hover{
+  background-color: #F638DC;
+  color: #200F21;
+}
+
+.btn-outline-purple-dark{
+  border-color: #5A3D5C;
+  color: #5A3D5C;
+}
+footer{
+  background: #200F21;
+  padding: 2.5rem 0;
+  text-align: center;
+  border-top: .05rem solid #200F21;
 }

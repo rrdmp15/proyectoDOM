@@ -490,7 +490,7 @@ export default{
             plantilla += `
             <article class="blog-post">
                 <h2 class="blog-post-title">${val.name}</h2>
-                <p class="blog-post-meta">${val.date} by <a href="#">${val.author.name}</a></p>
+                <p class="dark-text">${val.date} by <a href="#">${val.author.name}</a></p>
 
                 <p>${val.paragraph}</p>
 

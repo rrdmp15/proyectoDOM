@@ -9,35 +9,35 @@ export default{
             link: [
                 {
                     name:"Touch Up",
-                    href:"#",
+                    href:"https://en.wikipedia.org/wiki/Touch_Up",
                 },
                 {
                     name:"O my Heart",
-                    href:"#",
+                    href:"https://en.wikipedia.org/wiki/O_My_Heart",
                 },
                 {
                     name:"Eureka",
-                    href:"#",
+                    href:"https://en.wikipedia.org/wiki/Eureka_(Mother_Mother_album)",
                 },
                 {
                     name:"The Sticks",
-                    href:"#",
+                    href:"https://en.wikipedia.org/wiki/The_Sticks_(album)",
                 },
                 {
                     name:"Very Good Bad Thing",
-                    href:"#",
+                    href:"https://en.wikipedia.org/wiki/Very_Good_Bad_Thing",
                 },
                 {
                     name:"No Culture",
-                    href:"#",
+                    href:"https://en.wikipedia.org/wiki/No_Culture",
                 },
                 {
                     name:"Dance and Cry",
-                    href:"#",
+                    href:"https://en.wikipedia.org/wiki/Dance_and_Cry",
                 },
                 {
                     name:"Inside",
-                    href:"#",
+                    href:"https://en.wikipedia.org/wiki/Inside_(Mother_Mother_album)",
                 }
             ],
         },
@@ -46,21 +46,25 @@ export default{
             link: [
                 {
                     name: "Instagram",
-                    href: "#",
+                    href: "https://www.instagram.com/mothermothermusic/?hl=es",
                 },
                 {
                     name: "Facebook",
-                    href: "#",
+                    href: "https://www.facebook.com/MotherMotherBook/",
                 },{
                     name: "Twitter",
-                    href: "#",
+                    href: "https://twitter.com/mothermother?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
                 },{
                     name: "Website",
-                    href: "#",
+                    href: "https://www.mothermothersite.com/",
                 },{
                     name: "Youtube",
-                    href: "#",
+                    href: "https://www.youtube.com/channel/UCDRSqDdkk3tVNHaxyfOqALg",
                 },
+                {
+                    name: "Spotify",
+                    href:"https://open.spotify.com/artist/0e86yPdC41PGRkLp2Q1Bph"
+                }
             ]
         }
     ],
@@ -81,7 +85,7 @@ export default{
 
     cards(p1){
         return `
-        <div class="p-4 mb-3 bg-light rounded">
+        <div class="p-4 mb-3 rounded bg-about">
         <h4 class="fst-italic">${p1.title}</h4>
         <p class="mb-0">${p1.paragraph}</p>
         </div>

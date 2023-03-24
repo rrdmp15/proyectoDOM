@@ -8,7 +8,7 @@ export default{
             img:"img/mother-mother-mother.jpeg",
             btn: {
                 name:"Continue reading",
-                href:"#"
+                href:"https://en.wikipedia.org/wiki/Mother_Mother"
             }
         },
         {
@@ -19,7 +19,7 @@ export default{
           img: "img/heriot-bay.jpg",
           btn: {
               name:"Continue reading",
-              href:"#"
+              href:"https://en.wikipedia.org/wiki/Mother_Mother"
           }
         },
         {
@@ -30,7 +30,7 @@ export default{
           img:"img/album1.jpg",
           btn: {
               name:"Continue reading",
-              href:"#"
+              href:"https://en.wikipedia.org/wiki/Mother_Mother"
           }
         },
         {
@@ -41,7 +41,7 @@ export default{
           img:"img/Ryan-Guldemond.jpg",
           btn: {
               name:"Continue reading",
-              href:"#"
+              href:"https://en.wikipedia.org/wiki/Ryan_Guldemond"
           }
         },
         {
@@ -52,7 +52,7 @@ export default{
           img:"img/Molly-Guldemond.jpg",
           btn: {
               name:"Continue reading",
-              href:"#"
+              href:"https://es.famousbirthdays.com/people/molly-guldemond.html"
           }
         },
         {
@@ -63,7 +63,7 @@ export default{
           img:"img/Ali-Siadat.jpg",
           btn: {
               name:"Continue reading",
-              href:"#"
+              href:"https://www.famousbirthdays.com/people/ali-siadat.html"
           }
         },
         {
@@ -74,7 +74,7 @@ export default{
           img:"img/Jasmin-Parkin.jpg",
           btn: {
               name:"Continue reading",
-              href:"#"
+              href:"https://www.famousbirthdays.com/people/jasmin-parkin.html"
           }
         },
         {
@@ -85,7 +85,7 @@ export default{
           img:"img/Mike-Young.jpg",
           btn: {
               name:"Continue reading",
-              href:"#"
+              href:"https://genius.com/artists/Mike-young-mother-mother-bassist"
           }
         },
     ],
@@ -94,13 +94,13 @@ export default{
         this.post.forEach((val,id) =>{
             document.querySelector("#post").insertAdjacentHTML("beforeend", `
             <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="cards">
+        <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="cards">
           <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">${val.article}</strong>
+            <strong class="d-inline-block mb-2">${val.article}</strong>
             <h3 class="mb-0">${val.title}</h3>
-            <div class="mb-1 text-muted">${val.title}</div>
+            <div class="mb-1 dark-text">${val.date}</div>
             <p class="card-text mb-auto">${val.paragraph}</p>
-            <a href="#" class="stretched-link">${val.btn.name}</a>
+            <a href="${val.btn.href}" class="stretched-link">${val.btn.name}</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <img src="${val.img}" class="responsiveImg">
