@@ -67,10 +67,10 @@ export default{
 
     showAside(){
         const data = this.nav.map((val, id) =>{
-         return (
-            (val.link)
-            ? this.list(val)
-            : this.cards(val)
+            return (
+                (val.link)
+                ? this.list(val)
+                : this.cards(val)
             );
         });
         document.querySelector("#nav").insertAdjacentHTML("beforeend", data.join(""))
@@ -84,7 +84,7 @@ export default{
         <div class="p-4 mb-3 bg-light rounded">
         <h4 class="fst-italic">${p1.title}</h4>
         <p class="mb-0">${p1.paragraph}</p>
-      </div>
+        </div>
         `;
     },
 
@@ -94,9 +94,8 @@ export default{
         <h4 class="fst-italic">${p1.title}</h4>
         <ol class="list-unstyled mb-0">
         ${p1.link.map((val, id) => `<li><a href="${val.href}">${val.name}</a></li>`).join("")}
-          
         </ol>
-      </div>
+        </div>
         `;
     }
         

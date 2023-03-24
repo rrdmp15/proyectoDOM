@@ -42,7 +42,7 @@ export default {
     listaralbums(){
         let plantilla = "";
         this.albums.forEach((val,id) => {
-           plantilla += `<a class="p-2 link-secondary" href="$id="albums"${val.href}">${val.name}</a>` 
+            plantilla += `<a class="p-2 link-secondary" href="$id="albums"${val.href}">${val.name}</a>` 
         });
         document.querySelector("#albums").insertAdjacentHTML("beforeend", plantilla);
     }
