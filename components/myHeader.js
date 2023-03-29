@@ -1,50 +1,28 @@
+import config from "../storage/config.js";
 export default {
-    title:"Mother Mother",
-    albums: [
-        {
-            name: "History",
-            href: `https://es.wikipedia.org/wiki/Mother_Mother`,
-        },
-        {
-            name: "Origin",
-            href: `https://es.wikipedia.org/wiki/Mother_Mother`,
-        },
-        {
-            name: "Genders",
-            href: `https://es.wikipedia.org/wiki/Mother_Mother`,
-        },
-        {
-            name: "Record Labels",
-            href: `https://es.wikipedia.org/wiki/Mother_Mother`,
-        },
-        {
-            name: "Period of Activity",
-            href: `https://es.wikipedia.org/wiki/Mother_Mother`,
-        },
-        {
-            name: "Former Members",
-            href: `https://es.wikipedia.org/wiki/Mother_Mother`,
-        },
-        {
-            name: "Time Line",
-            href: `https://es.wikipedia.org/wiki/Mother_Mother`,
-        },
-        {
-            name: "Members",
-            href: `https://es.wikipedia.org/wiki/Mother_Mother`,
-        }
-    ],
-    
-    listTitle(){
-        document.querySelector("#title").insertAdjacentHTML("beforeend", `<a class="blog-header-logo text-dark" href="#"><h1>${this.title}</h1></a>`)
-    },
 
-    listaralbums(){
-        let plantilla = "";
-        this.albums.forEach((val,id) => {
-            plantilla += `<a class="p-2 link-secondary navA" href="${val.href}">${val.name}</a>` 
-        });
-        document.querySelector("#albums").insertAdjacentHTML("beforeend", plantilla);
+    show(){
+        config.dataMyHeader();
+        Object.assign(this, JSON.parse(localStorage.getItem("myHeader")))
+
+        const ws = new Worker("storage/wsMyHeader.js", {type: "module"})
+
+        let id = [];
+        let count = 0;
+
+        ws.postMessage({module: "listTitle", data: this.title});
+
+        ws.postMessage({module: "listaralbums", data: this.albums});
+        id = ["#title", "#albums"];
+
+        ws.addEventListener("message", (e)=>{
+            let doc = new DOMParser().parseFromString(e.data, "text/html");
+
+            document.querySelector(id[count]).append(...doc.body.children);
+
+            (id.length-1==count) ? ws.terminate(): count++;
+        })
     }
+    
 }
 // ``

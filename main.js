@@ -4,16 +4,15 @@ import myPost from "./components/myPost.js";
 import myAside from "./components/myAside.js";
 import myMain from "./components/myMain.js";
 
-myHeader.listaralbums();
-myHeader.listTitle();
+myHeader.show();
 
+myBanner.show();
 myBanner.showImage();
-myBanner.showBannerSection();
 
-myPost.showPost();
+myPost.show();
 
-myAside.showAside();
+myAside.show();
 
-myMain.showArticles();
+myMain.show();
 
 //``
